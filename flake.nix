@@ -74,6 +74,13 @@
           nativeBuildInputs = [
             buildPackages.cmake
             buildPackages.nasm
+            buildPackages.rapidjson
+            buildPackages.xorg.libX11
+            buildPackages.xorg.libXrandr
+            buildPackages.xorg.libXinerama
+            buildPackages.xorg.libXcursor
+            buildPackages.xorg.libXi
+            buildPackages.xorg.libXext
           ] ++ lib.optionals enableDevInputs [
             buildPackages.clang-tools # clang-format
             python3Packages.pyqt5
